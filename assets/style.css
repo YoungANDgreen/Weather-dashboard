@@ -1,0 +1,13 @@
+#citysearch {
+    width: 25%;
+}
+
+#recents {
+    height: 200px;
+    width: max-content;
+}
+
+#weather {
+    width: max-content;
+    height: max-content;
+}
