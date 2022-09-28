@@ -11,7 +11,7 @@
 <body>
     <div class="jumbotron">
         <h1 class="display-4">Weather Dashboard</h1>
-        <p class="lead">Come see the 5-day weather forecast for your area!.</p>
+        <p class="lead">Come see the Current Conditions and 5-day weather forecast for your area!</p>
         <hr class="my-4">
     </div>
     <div id="citysearch">
@@ -21,6 +21,11 @@
           <button class="btn btn-outline-secondary" type="button" id="cityButton">Search</button>
         </div>
         </div>
+    </div>
+
+    <!-- Begin area that will display dynamically generated weather cards. -->
+    <div id="currentWeather">
+        <div id="current"></div>
     </div>
     <div id="weather">
         <div id="day1"></div>

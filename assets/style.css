@@ -10,4 +10,83 @@
 #weather {
     width: max-content;
     height: max-content;
+    flex-direction: row;
+    
+}
+
+#currentWeather {
+    width: max-content;
+    height: max-content;
+}
+
+#current {
+    width:auto;
+    height:auto;
+    background: rgb(45,241,253);
+    background: linear-gradient(0deg, rgba(45,241,253,1) 0%, rgba(34,105,195,1) 100%);
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 10px;
+    border-radius: 10%;
+    padding: 10%;
+}
+
+#day1 {
+    width:auto;
+    height:auto;
+    background: rgb(45,241,253);
+    background: linear-gradient(0deg, rgba(45,241,253,1) 0%, rgba(34,105,195,1) 100%);
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 10px;
+    border-radius: 10%;
+    padding: 10%;
+}
+
+#day2 {
+    width:auto;
+    height:auto;
+    background: rgb(45,241,253);
+    background: linear-gradient(0deg, rgba(45,241,253,1) 0%, rgba(34,105,195,1) 100%);
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 10px;
+    border-radius: 10%;
+    padding: 10%;
+}
+
+#day3 {
+    width:auto;
+    height:auto;
+    background: rgb(45,241,253);
+    background: linear-gradient(0deg, rgba(45,241,253,1) 0%, rgba(34,105,195,1) 100%);
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 10px;
+    border-radius: 10%;
+    padding: 10%;
+}
+
+#day4 {
+    width:auto;
+    height:auto;
+    background: rgb(45,241,253);
+    background: linear-gradient(0deg, rgba(45,241,253,1) 0%, rgba(34,105,195,1) 100%);
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 10px;
+    border-radius: 10%;
+    padding: 10%;
+}
+
+#day5 {
+    width:auto;
+    height:auto;
+    background: rgb(45,241,253);
+    background: linear-gradient(0deg, rgba(45,241,253,1) 0%, rgba(34,105,195,1) 100%);
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 10px;
+    border-radius: 10%;
+    padding: 10%;
 }
