@@ -3,7 +3,7 @@ var weatherCard2 = document.getElementById('currentWeather');
 var city = document.getElementById('citySearch').value;
 var getResult = document.getElementById('cityButton');
 var lastSearch = document.getElementById('last');
-var current = document.getElementById('current');
+var current1 = document.getElementById('current');
 var day1 = document.getElementById('day1');
 var day2 = document.getElementById('day2');
 var day3 = document.getElementById('day3');
@@ -44,18 +44,18 @@ function getApi() {
         var windSpeed0 = document.createElement('li');
 
         current0.textContent = data.name + ' Current' ;
-        icon0.src = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
+        icon0.src = 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
         humidity0.textContent = 'Humidity: ' + data.main.humidity + '%';
         temp0.textContent = 'Current Temp: ' + data.main.temp + ' F';
         condition0.textContent = 'Conditions: ' + data.weather[0].description;
         windSpeed0.textContent = 'Wind Speed: ' + data.wind.speed;
 
-        current.append(current0);
-        current.append(icon0);
-        current.append(temp0);
-        current.append(condition0);
-        current.append(humidity0);
-        current.append(windSpeed0);
+        current1.append(current0);
+        current1.append(icon0);
+        current1.append(temp0);
+        current1.append(condition0);
+        current1.append(humidity0);
+        current1.append(windSpeed0);
           
       });
   }
@@ -84,7 +84,7 @@ function getApi1() {
         var humidity1 = document.createElement('li');
         var windSpeed1 = document.createElement('li');
 
-        icon1.src = 'http://openweathermap.org/img/w/' + data.list[6].weather[0].icon + '.png';
+        icon1.src = 'https://openweathermap.org/img/w/' + data.list[6].weather[0].icon + '.png';
         humidity1.textContent = 'Humidity: ' + data.list[6].main.humidity + '%';
         temp1.textContent = 'Temp: ' + data.list[6].main.temp + ' F';
         condition1.textContent = 'Conditions: ' + data.list[6].weather[0].description;
@@ -106,7 +106,7 @@ function getApi1() {
         var humidity2 = document.createElement('li');
         var windSpeed2 = document.createElement('li');
 
-        icon2.src = 'http://openweathermap.org/img/w/' + data.list[14].weather[0].icon + '.png';
+        icon2.src = 'https://openweathermap.org/img/w/' + data.list[14].weather[0].icon + '.png';
         humidity2.textContent = 'Humidity: ' + data.list[14].main.humidity + '%';
         temp2.textContent = 'Temp: ' + data.list[14].main.temp + ' F';
         condition2.textContent = 'Conditions: ' + data.list[14].weather[0].description;
@@ -128,7 +128,7 @@ function getApi1() {
         var humidity3 = document.createElement('li');
         var windSpeed3 = document.createElement('li');
 
-        icon3.src = 'http://openweathermap.org/img/w/' + data.list[22].weather[0].icon + '.png';
+        icon3.src = 'https://openweathermap.org/img/w/' + data.list[22].weather[0].icon + '.png';
         humidity3.textContent = 'Humidity: ' + data.list[22].main.humidity + '%';
         temp3.textContent = 'Temp: ' + data.list[22].main.temp + ' F';
         condition3.textContent = 'Conditions: ' + data.list[22].weather[0].description;
@@ -150,7 +150,7 @@ function getApi1() {
         var humidity4 = document.createElement('li');
         var windSpeed4 = document.createElement('li');
 
-        icon4.src = 'http://openweathermap.org/img/w/' + data.list[30].weather[0].icon + '.png';
+        icon4.src = 'https://openweathermap.org/img/w/' + data.list[30].weather[0].icon + '.png';
         humidity4.textContent = 'Humidity: ' + data.list[30].main.humidity + '%';
         temp4.textContent = 'Temp: ' + data.list[30].main.temp + ' F';
         condition4.textContent = 'Conditions: ' + data.list[30].weather[0].description;
@@ -172,7 +172,7 @@ function getApi1() {
         var humidity5 = document.createElement('li');
         var windSpeed5 = document.createElement('li');
 
-        icon5.src = 'http://openweathermap.org/img/w/' + data.list[38].weather[0].icon + '.png';
+        icon5.src = 'https://openweathermap.org/img/w/' + data.list[38].weather[0].icon + '.png';
         humidity5.textContent = 'Humidity: ' + data.list[38].main.humidity + '%';
         temp5.textContent = 'Temp: ' + data.list[38].main.temp + ' F';
         condition5.textContent = 'Conditions: ' + data.list[38].weather[0].description;
