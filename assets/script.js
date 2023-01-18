@@ -10,18 +10,21 @@ var day3 = document.getElementById('day3');
 var day4 = document.getElementById('day4');
 var day5 = document.getElementById('day5');
 
-// var last = localStorage.getItem('city');
-// lastSearch.textContent = last;
 
-// function getValue() {
-//     var city = document.getElementById('citySearch').value;
-//     console.log(city);
-//     localStorage.setItem('city', last);
-// }
+var formSubmitHandler = function (event) {
+  event.preventDefault();
+
+  var city = citySearch.value.trim();
+
+  if (city) {
+    getWeatherForecast(city);
+    cityInput.value = '';
+  }
+}
 
 // Function generating current weather.
 function getApi() {
-    var requestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Denver&appid=2bd3abed1cabfacf19025ec224af21db&units=imperial';
+    var requestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + citySearch.value +'&appid=2bd3abed1cabfacf19025ec224af21db&units=imperial';
   
     fetch(requestUrl)
       .then(function (response) {
@@ -62,7 +65,7 @@ function getApi() {
 
 // function generating 5 day forecast.
 function getApi1() {
-    var requestUrl1 = 'https://api.openweathermap.org/data/2.5/forecast?q=Denver&appid=2bd3abed1cabfacf19025ec224af21db&units=imperial';
+    var requestUrl1 = 'https://api.openweathermap.org/data/2.5/forecast?q=' + citySearch.value + '&appid=2bd3abed1cabfacf19025ec224af21db&units=imperial';
   
     fetch(requestUrl1)
       .then(function (response) {
@@ -189,6 +192,5 @@ function getApi1() {
       });
   }
 
-// getResult.addEventListener('click', getValue);
 getResult.addEventListener('click', getApi);
 getResult.addEventListener('click', getApi1);
